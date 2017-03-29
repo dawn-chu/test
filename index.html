@@ -18,63 +18,10 @@
           letter-spacing: -2px;
         }
 	</style>
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?e9e0ed8d2dd56059cc040dc1f05b7424";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-<script>
-			var today = new Date();
-   			var h = today.getHours();
-   			var m = today.getMinutes();
-   			var s = today.getSeconds();
-	document.getElementById('jstime').innerHTML = "This is the time get from javascript:"+h + ":" + m + ":"+s;
-</script>
-	<script type="text/javascript">
-    (function(){
-        var $ = function(id){
-        return document.getElementById(id);
-    };
-    var o = { 
-        hour: $("hours"), 
-        minu: $("minuts"), 
-        sec: $("seconds"), 
-     };
-    var f={
-        zero: function(n, top){
-        n = parseInt(n, 10), top = top || "00";
-        if(n > 0){
-            if(n <= 9){
-              n = "0" + n;  
-            }
-            return String(n);
-          }else{
-            return top.toString();  
-                }
-        },
-      ui: function(){
-      var mytime = new Date();
-      var h = mytime.getHours(),  m = mytime.getMinutes(), s = mytime.getSeconds();
-      o.hour.innerHTML = f.zero(h);
-      o.minu.innerHTML = f.zero(m, 60);
-      o.sec.innerHTML = f.zero(s, 60);
-      setTimeout(f.ui, 1000);
-        }
-     };
-     f.ui();
-    })();
-</script>
 
 </head>
 <body>
 <div id="jstime">11</div>
-	<div class="display" id="hours">00</div>
-<div class="display" id="minuts">00</div>
-<div class="display" id="seconds">00</div>
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-4 col-md-4">
